@@ -1,0 +1,47 @@
+<html>
+
+<head>
+
+
+    <title>
+
+Change Images
+
+    </title>
+</head>
+
+
+<body>
+
+<img id ="change" src="halloween.jpg">
+<button onclick="imagechange()">Halloween</button>
+
+<button onclick="imagechange()">Christmas</button>
+
+
+<button onclick="imagechange()">Easter</button>
+
+<script>
+
+    function imagechange() {
+
+        document.getElementById("change").src
+
+        if (document.getElementById("change").src=="halloween.jpg"){ 
+            document.getElementById("change").src="christmas.jpg"
+
+        }else if (document.getElementById("change").src=="christmas.jpg"){ 
+            document.getElementById("change").src="easter.jpg"
+
+        }else{  
+
+            document.getElementById("change").src="halloween.jpg"
+
+        }
+
+
+    }
+
+</script>
+</body>
+</html>
